@@ -13,3 +13,66 @@
  *= require_tree .
  *= require_self
  */
+ body {
+padding-top: 50px;
+}
+
+#headerlogo{
+
+}
+
+#menu {
+   padding: 15px;
+   float: right;
+}
+
+#topbar {
+   height: 70px;
+}
+
+#navbrand {
+   padding-top: 0px;
+}
+
+#carousel-example-generic {
+    margin-bottom: 0px;
+}
+
+#services {
+background-color:black;
+}
+
+.jumbotron {
+  padding: 30px 30px 30px 0px;
+  margin-bottom: 0px;
+  color: white;
+  background-color: black;
+  border-right: white 1px solid;
+  text-align: center;
+}
+
+#jumbo-first {
+padding-left: 50px;
+}
+
+#jumbo-last {
+border-right:none;
+}
+
+#cristiano {
+   background-color: lightgrey;
+}
+
+#cristiano p,h3{
+   padding: 10px;
+}
+
+#footer {
+   background-color: #1e1e1e;
+   color: white;
+   padding: 20px;
+}
+
+.carousel-caption {
+  padding-bottom: 25%;
+}

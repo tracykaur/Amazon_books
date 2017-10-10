@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>AmazonBooks</title>
-    <%= csrf_meta_tags %>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="BOOKS">
+ <title>Amazon</title>
+    <!-- YS Latest compiled and minified CSS. We need to link our CSS to bootstrap. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
 
-  <body>
-    <%= yield %>
-  </body>
-</html>
+</head>
+<body>
+
+<!-- YS the div below is necessary to make your page responive -->
+<div class="container-fluid">
+  <div class="row" id="banner">
+     <div class="col-xs-12">
+       <nav class="navbar navbar-inverse navbar-fixed-top" id="topbar">
+         <div class="container-fluid">
+           <div class="navbar-header">
+              <a class="navbar-brand" id="navbrand" href="/">
+                <img src= "http://www.iconninja.com/files/424/467/635/amazon-media-social-logo-icon.svg" height="50" width="50">
+              </a>
+           </div>
+           <ul class="nav nav-pills" id="menu">
+             <li role="presentation" class="active"><a href="#">Sign in</a></li>
+             <li role="presentation"><a href="books">Books</a></li>
+             <li role="presentation"><a href="authors">Authors</a></li>
+           </ul>
+         </div>
+         </div>
+     </div>
+  </div>
+<!-- The section bellow is actually our slider. But it's called carousel.  -->
+<%= yield %>
+
+
+
+    <div class="row" id="footer">
+       <div class="col-xs-12 col-sm-3">
+          <address>
+             <strong>Amazon.com</strong><br>
+             <abbr title="Phone">P:</abbr> (123) 456-7890
+          </address>
+
+          <address>
+            <strong></strong><br>
+            <a href="mailto:#">first.last@amazon.com</a>
+          </address>
+       </div>
+    </div>
+
+
+</body>
