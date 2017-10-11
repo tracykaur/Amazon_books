@@ -1,7 +1,15 @@
 <div>
   <div class="col-xs-12 col-sm-7">
 
-  <h1>Hi</h1><br>
-  <h2>You won't find books at a better price. Guaranteed</h2>
+  <h1>Welcome</h1><br>
+  <h3>You won't find books at a better price. Guaranteed</h3>
+
+<% @books.each do |book| %>
+<p> <%=book.title %><p/>
+<p> <%=book.author.first_name %><p/>
+<% unless book.image_url.blank? %>
+<%= image_tag book.image_url, size:"140x220"%>
+<% end %>
+    <% end %>
 </div>
 </div>
